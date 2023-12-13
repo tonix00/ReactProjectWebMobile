@@ -1,0 +1,38 @@
+.login{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .login_form{
+            padding:1rem;
+            margin: 1rem;
+            margin-top: 5rem;
+            border: 1px solid $orange-color;
+            border-radius: 1rem;
+            background-color: $white-color;
+            box-shadow: 0 1rem 1.6rem rgb($darkgray-color, 0.05);
+
+            label{
+                margin-top: 1rem;
+                margin-bottom: 0.2rem;
+                font-size: large;
+                font-weight: 600;
+                color: $primary-color;
+                width: 100%;
+
+                input{
+                    
+                    padding: 0.7rem;
+                    width: 100%;
+                    min-width: 20rem;
+                    border: 1px solid $orange-color;
+                    border-radius: 1rem;
+                }
+            }
+            button{
+                margin-top: 2rem;
+            }
+        }
+    }
+}
