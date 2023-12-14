@@ -1,0 +1,39 @@
+.member_enrollment{
+    .container{
+        width: 100%;
+        
+        form{
+            
+            display: flex;
+            flex-direction: column;
+            background-color: $white-color;
+            padding: 1rem;
+            border: 1px solid $gray-color;
+            border-radius: 0.5rem;
+
+            margin-bottom: 1rem;
+
+            .field_input{
+                
+                label{
+                    width: 100%;
+                    select, input{
+                        width: 100%;
+                        border: 1px solid $pink-color;
+                        border-radius: 0.5rem;
+                        margin-bottom: 1rem;
+                        padding: 0.3rem;
+                    }
+                }
+            }
+            
+        }
+
+        form{
+            .btn_group{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.home{
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size:large;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .main_menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: $white-color;
+            width: 100%;
+            padding: 2rem;
+
+            border: 1px solid $pink-color;
+            border-radius: 0.3rem;
+
+            margin-bottom: 2rem;
+            button{
+                width: 100%;
+                margin-bottom: 0.3rem;
+            }
+        }
+    }
+}

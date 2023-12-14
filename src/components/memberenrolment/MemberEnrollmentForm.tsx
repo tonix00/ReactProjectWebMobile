@@ -1,7 +1,7 @@
 import React from 'react';
-import DynamicForm from './DynamicForm'; // Make sure to adjust the path
-import FormDataParser, { FormData, ParsedFormData }  from '../../../services/FormDataParser';
-import dbTemplate from '../../../services/FormTemplate';
+import DynamicForm from './forms/DynamicForm'; // Make sure to adjust the path
+import FormDataParser, { FormData, ParsedFormData }  from '../../services/FormDataParser';
+import dbTemplate from '../../services/FormTemplate';
 
 interface MainFormData {
   name: string;
@@ -16,7 +16,7 @@ interface MainFormData {
   }>;
 }
 
-const TestDynamicForm: React.FC = () => {
+const MemberEnrollmentForm: React.FC = () => {
 
   const jsonData: FormData[] = dbTemplate;
   const formDataParser = new FormDataParser(jsonData);
@@ -24,17 +24,17 @@ const TestDynamicForm: React.FC = () => {
 
   // Mock data, replace this with the actual data received from the server
   const mainFormData: MainFormData = {
-    "name": "FORTUNELIFE GROUP TERM LIFE INSURANCE (OLC)",
+    "name": "FLI (OLC)",
     "method": "POST",
     "action": "/save_insured",
     "fields": parsedData
   };
 
   return (
-    <div>
+    <>
       <DynamicForm formData={mainFormData} />
-    </div>
+    </>
   );
 };
 
-export default TestDynamicForm;
+export default MemberEnrollmentForm;

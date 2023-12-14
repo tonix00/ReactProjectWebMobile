@@ -5,8 +5,9 @@ import Detail from "./pages/Detail";
 import NotFound from "./pages/NotFound";
 import DefaultLayout from "./components/layout/DefaultLayout";
 import GuestLayout from "./components/layout/GuestLayout";
-import MemberEnrollment from "./pages/MemberEnrolment";
-import TestDynamicForm from "./components/memberenrolment/forms/TestDynamicForm";
+import MemberEnrollment from "./pages/MemberEnrollment";
+import MemberList from "./pages/MemberList";
+import MemberDetail from "./pages/MemberDetail";
 
 
 
@@ -25,11 +26,15 @@ const router = createBrowserRouter([
         element: <Home username={"tony"} />
       },
       {
-        path: '/test_dynamic',
-        element: <TestDynamicForm />
+        path: '/member_list',
+        element: <MemberList />
       },
       {
-        path: '/member_enrolment',
+        path: '/member_list',
+        element: <MemberDetail />
+      },
+      {
+        path: '/member_enrollment',
         element: <MemberEnrollment />
       },
       {

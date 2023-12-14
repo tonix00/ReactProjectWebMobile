@@ -1,14 +1,21 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Nav from '../Nav';
+import logo from '../../assets/images/logo.png'
 
 const GuestLayout: React.FC = () => {
   return (
-    
-    <div className="guestLayout">
-      <Nav></Nav>
-      <Outlet />
-    </div>
+    <>
+      <nav>
+        <img src={logo} />
+      </nav>
+      <div className="guestLayout">
+        <Outlet />
+      </div>
+      <footer>
+        <div>CONTACT US support@ruralnet.ph</div> 
+        <div>© RuralNet</div>
+      </footer>
+    </>
   );
 };
 

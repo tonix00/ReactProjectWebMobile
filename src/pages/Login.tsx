@@ -44,7 +44,7 @@ const Login: React.FC = () => {
         </label>
         <br />
         <center>
-        <button type="submit" className='btn'>Login</button>
+        <button type="submit" className='btn_primary'>Login</button>
         </center>
       </form>
       </div>

@@ -26,3 +26,7 @@ h1, h2, h3, h4, h5{
 .btn{
     @include button();
 }
+
+.btn_primary{
+    @include button_blue();
+}

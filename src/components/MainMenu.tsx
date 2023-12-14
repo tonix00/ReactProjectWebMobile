@@ -6,28 +6,27 @@ const MainMenu: React.FC = () => {
   
   const handleMemberListClick = () => {
     // Navigate to the MemberEnrollment component
-    navigate('/member_enrolment');
+    navigate('/member_enrollment');
   };
 
   return (
-    <div>
-      <br />
-      <br />
+    <div className='main_menu'>
+      
       <h5>Dashboard</h5>
       <br />
 
       <h5><u>Member-Related</u></h5>
-      <button className='btn btn-outline-primary' onClick={handleMemberListClick}>Member list</button>
-      <button className='btn btn-outline-primary'>Center list</button>
+      <button className='btn_primary' onClick={handleMemberListClick}>Member list</button>
+      <button className='btn_primary'>Center list</button>
       
       <br />
       <h5><u>Registration</u></h5>
-      <button className='btn btn-outline-primary'>New Registration</button>
-      <button className='btn btn-outline-primary'>Renewals</button>
+      <button className='btn_primary'>New Registration</button>
+      <button className='btn_primary'>Renewals</button>
       
       <br />
-      <button className='btn btn-outline-primary'>Payment</button>
-      <button className='btn btn-outline-primary'>Notification</button>
+      <button className='btn_primary'>Payment</button>
+      <button className='btn_primary'>Notification</button>
     </div>
   );
 };

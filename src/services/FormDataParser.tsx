@@ -1,4 +1,4 @@
-interface ParsedFormData {
+export interface ParsedFormData {
   variable_name: string;
   label: string;
   validation: string;
@@ -6,7 +6,7 @@ interface ParsedFormData {
   is_required: boolean;
 }
 
-interface FormData {
+export interface FormData {
   fieldName: string;
   fieldLabel: string;
   fieldMax: number;
